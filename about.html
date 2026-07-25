@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Umaira Sadaf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">umaira@ai-marketing</span><span class="blink">:~$</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 20px;">
+    <div class="wrap">
+      <p class="eyebrow">cat about.md</p>
+      <h1>Computer Science, applied to <span class="accent">marketing</span></h1>
+      <p class="lede">
+        I started with C++ and data structures. Now I use that same structured
+        thinking to build small, reliable AI pipelines for marketing work —
+        the kind that turn a spreadsheet into a report, or a brief into a
+        batch of drafted emails, without babysitting the process by hand.
+      </p>
+    </div>
+  </section>
+
+  <section style="border-top: none; padding-top: 0;">
+    <div class="wrap">
+      <p class="section-eyebrow">Background</p>
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2026 — Present</span>
+          <h3>AI Marketing Intern, FlyRank Student Internship Program</h3>
+          <p style="color: var(--text-muted); margin: 0;">
+            Completing the AI Marketing track: report automation, email drafting,
+            content pipelines, and agent/MCP fundamentals. Onboarding and
+            certification modules at 100% completion.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">Current</span>
+          <h3>BS Computer Science, 6th Semester</h3>
+          <p style="color: var(--text-muted); margin: 0;">
+            Government Graduate College, Vehari. CGPA 3.84 / 4.00. Coursework
+            and independent projects in C++, object-oriented programming, and
+            data structures.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">Certifications</span>
+          <h3>HP LIFE &amp; Saylor Academy</h3>
+          <p style="color: var(--text-muted); margin: 0;">
+            HP Certified — AI Business Professional (HP LIFE). Saylor Academy
+            Certificate — Software Engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-eyebrow">How I work</p>
+      <h2>Principles</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Math in code, narrative in the model</h3>
+          <p>Numbers get computed deterministically. The LLM explains and contextualizes — it doesn't do arithmetic.</p>
+        </div>
+        <div class="card">
+          <h3>Workflows before agents</h3>
+          <p>I default to fixed, predictable pipelines. I only reach for agent autonomy when a task genuinely needs the model to choose its own steps.</p>
+        </div>
+        <div class="card">
+          <h3>Structured output over prose parsing</h3>
+          <p>When a script needs to use a model's output programmatically, I ask for JSON — not free text I have to regex apart later.</p>
+        </div>
+        <div class="card">
+          <h3>Show the working, not just the result</h3>
+          <p>Every script prints what it's about to send the model, so mistakes are visible before they become a bad report or a bad email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-eyebrow">Toolkit</p>
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="tag teal">AI Fluency</span>
+        <span class="tag amber">Marketing</span>
+        <span class="tag violet">LLM</span>
+        <span class="tag violet">ML</span>
+        <span class="tag teal">MCP</span>
+        <span class="tag">Python</span>
+        <span class="tag">C++ (OOP, Data Structures)</span>
+        <span class="tag">Prompt Chaining</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Umaira Sadaf</span>
+    <span>Vehari, Pakistan · humerasadaf59@gmail.com</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

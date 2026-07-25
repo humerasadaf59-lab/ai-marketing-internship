@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umaira Sadaf — AI Marketing Intern</title>
+<meta name="description" content="Portfolio of Umaira Sadaf, AI Marketing Intern — report automation, email drafting, content pipelines, and MCP agent work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">umaira@ai-marketing</span><span class="blink">:~$</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">whoami</p>
+      <h1>Turning raw data into<br><span class="accent">AI-assisted marketing</span> output.</h1>
+      <p class="lede">
+        I'm Umaira Sadaf, a Computer Science student and AI Marketing Intern with the
+        FlyRank Student Internship Program. I build small automation pipelines —
+        report generation, email drafting, content workflows, and AI agents — that
+        turn data into decisions.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View projects</a>
+        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="pipeline" aria-label="How my pipelines work: data in, LLM reasoning, marketing output">
+        <div class="pipeline-node data">
+          <span class="label">Input</span>
+          <span class="value">Campaign Data</span>
+        </div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-node llm">
+          <span class="label">Reasoning</span>
+          <span class="value">Claude / LLM</span>
+        </div>
+        <span class="pipeline-arrow">→</span>
+        <div class="pipeline-node output">
+          <span class="label">Output</span>
+          <span class="value">Report / Email / Copy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-eyebrow">Track work</p>
+      <h2>What I've built so far</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="code">FL-02</span>
+          <h3>Report Automation <span class="status done">complete</span></h3>
+          <p>CSV campaign data → deterministic stats in Python → Claude writes the plain-English report.</p>
+          <span class="tag teal">Python</span><span class="tag violet">LLM</span>
+        </div>
+        <div class="card">
+          <span class="code">FL-03</span>
+          <h3>Email Drafting <span class="status done">complete</span></h3>
+          <p>One campaign brief, fanned out into personalized drafts per audience segment.</p>
+          <span class="tag teal">Python</span><span class="tag amber">Marketing</span>
+        </div>
+        <div class="card">
+          <span class="code">FL-04</span>
+          <h3>Content Pipeline <span class="status done">complete</span></h3>
+          <p>Outline → draft → edit → format — a fixed four-stage prompt chain (workflow, not agent).</p>
+          <span class="tag violet">LLM</span><span class="tag amber">Marketing</span>
+        </div>
+        <div class="card">
+          <span class="code">FL-05</span>
+          <h3>Agents &amp; MCP <span class="status progress">in progress</span></h3>
+          <p>Workflow vs. agent explainer, plus a working MCP connector running real tool calls.</p>
+          <span class="tag violet">MCP</span><span class="tag teal">AI Fluency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-eyebrow">Toolkit</p>
+      <h2>Core skills</h2>
+      <div class="skills-list">
+        <span class="tag teal">AI Fluency</span>
+        <span class="tag amber">Marketing</span>
+        <span class="tag violet">LLM</span>
+        <span class="tag violet">ML</span>
+        <span class="tag teal">MCP</span>
+        <span class="tag">Python</span>
+        <span class="tag">C++ (OOP, Data Structures)</span>
+        <span class="tag">Prompt Chaining</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Umaira Sadaf</span>
+    <span>Vehari, Pakistan · humerasadaf59@gmail.com</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

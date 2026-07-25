@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Umaira Sadaf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">umaira@ai-marketing</span><span class="blink">:~$</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 20px;">
+    <div class="wrap">
+      <p class="eyebrow">ls ./projects</p>
+      <h1>Internship <span class="accent">track projects</span></h1>
+      <p class="lede">Four assignments from the FlyRank AI Marketing track, each a working script or build — not just a writeup.</p>
+    </div>
+  </section>
+
+  <section style="border-top: none; padding-top: 0;">
+    <div class="wrap">
+
+      <div class="card" style="margin-bottom: 20px;">
+        <span class="code">FL-02 · General AI Fluency</span>
+        <h3>Report Automation <span class="status done">complete</span></h3>
+        <p>
+          Takes raw campaign performance data (CSV: impressions, clicks, conversions, spend)
+          and produces a weekly report. All arithmetic — totals, CTR, conversion rate, top
+          campaigns — runs in Python before the model ever sees it, so the numbers can't be
+          hallucinated. Claude's job is narrative: headline summary, what went well, what
+          needs attention, and one recommended action.
+        </p>
+        <div class="skills-list">
+          <span class="tag teal">Python</span>
+          <span class="tag">pandas</span>
+          <span class="tag violet">Claude API</span>
+          <span class="tag amber">Marketing analytics</span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 20px;">
+        <span class="code">FL-03 · General AI Fluency</span>
+        <h3>Email Drafting <span class="status done">complete</span></h3>
+        <p>
+          Reads one campaign brief — product, offer, tone, CTA — plus a list of audience
+          segments, and drafts a personalized email per segment (cold leads, expired trials,
+          demo-booked, etc.). Output is validated JSON, saved as individual files and one
+          combined CSV for quick review before sending.
+        </p>
+        <div class="skills-list">
+          <span class="tag teal">Python</span>
+          <span class="tag violet">Claude API</span>
+          <span class="tag amber">Copywriting</span>
+          <span class="tag">Structured output</span>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 20px;">
+        <span class="code">FL-04 · General AI Fluency</span>
+        <h3>Content Pipeline <span class="status done">complete</span></h3>
+        <p>
+          A four-stage prompt chain — outline, draft, edit, format — where each stage's
+          output feeds the next stage's input in a fixed order. This is the canonical
+          <em>workflow</em> pattern (as opposed to an agent): the pipeline never decides to
+          skip a stage or call an external tool on its own. It's the build referenced in
+          FL-05's workflow-vs-agent explainer.
+        </p>
+        <div class="skills-list">
+          <span class="tag violet">Prompt chaining</span>
+          <span class="tag teal">Python</span>
+          <span class="tag amber">Content strategy</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="code">FL-05 · General AI Fluency</span>
+        <h3>Agent Concepts &amp; MCP Basics <span class="status progress">in progress</span></h3>
+        <p>
+          Explainer on the workflow-vs-agent distinction, applied to the FL-04 pipeline
+          above, plus a working MCP connector run through three tasks that plain chat
+          couldn't do on its own (e.g. reading local files or querying a live service).
+        </p>
+        <div class="skills-list">
+          <span class="tag violet">MCP</span>
+          <span class="tag teal">AI Fluency</span>
+          <span class="tag">Agent design</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Umaira Sadaf</span>
+    <span>Vehari, Pakistan · humerasadaf59@gmail.com</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
