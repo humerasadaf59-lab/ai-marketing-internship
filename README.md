@@ -6,7 +6,7 @@ BS Computer Science, Government Graduate College, Vehari.
 This repo is the hub for my internship track work: automation scripts,
 an AI agent build, and the portfolio site that presents all of it.
 
-**Live site:** [add your GitHub Pages / hosted URL here]
+**Live site:** https://humerasadaf59-lab.github.io/ai-marketing-internship/
 **Contact:** humerasadaf59@gmail.com
 
 ---
@@ -18,7 +18,7 @@ an AI agent build, and the portfolio site that presents all of it.
 | FL-02 | Report Automation | Script | ✅ Complete |
 | FL-03 | Email Drafting | Script | ✅ Complete |
 | FL-04 | Content Pipeline | Script (workflow) | ✅ Complete |
-| FL-05 | Agent Concepts & MCP Basics | Explainer + MCP build | 🔄 In progress |
+| FL-05 | Agent Concepts & MCP Basics | Explainer + MCP build | ✅ Complete |
 
 ---
 
